@@ -1,0 +1,19 @@
+1D array
+1: declare an array ,how to access array elements
+2: to initialize the array at runtime(user input)
+3: to initialize the array(inside programme)
+4: print the element of array
+5: sum of all the elements of an array
+6: greatest number in the array
+7: print odd elements in an array
+8: print even elemets in an array
+9: double the value of elements in an array[1,2,3,4]=>[2,4,6,8]
+10: store table of 3 in an array(not using user input)
+11: [1,2,3,4]=>[3,5,7,4]   =>[1+2,2+3,3+4,4]=>arr[i]=arr[i]+arr[i+1]=>arr[0]=arr[0]+arr[1];
+
+2D array
+1: declare  an array 
+2: accessing the elents of array(printing of array)
+3:sum of all the elements of 2d array
+4:sum of each row of 2d array
+5: sum of individual column
