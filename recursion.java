@@ -6,6 +6,8 @@ class recursion{
         System.out.println("print fucntion"+n);
         print(n-1);
     }
+    //int a=8967;
+// 8 9 6 7
     
     public static void main(String[] args) {
         System.out.println("hello world");
