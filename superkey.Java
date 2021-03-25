@@ -44,12 +44,12 @@ class newgen2 extends Car{
 
 class newgen3 extends newGenCar{
     int seats;
-    newgen3(int seats,int dashboard,int light,int modelno, int height, int weight, int engine, int speed)
+    newgen3(int seats,int dashboard,int light,int modelno, int height, int weight, int engine, int speed){
 
         super(dashboard,light,modelno,height,weight,engine,speed);
         this.seats=seats;
     }
-
+}
 
 public class superkey{
     public static void main(String[] args) {
