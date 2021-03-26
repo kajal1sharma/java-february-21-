@@ -1,5 +1,9 @@
 class School{
+    //static final String schoolname="DAV";
     static final String schoolname;
+    static {
+        schoolname="DAv";
+    }
     //static final String schoolname;
 //To check block initialization of schoolname;
     final String standard;
