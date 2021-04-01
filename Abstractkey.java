@@ -1,18 +1,44 @@
-
+//final abstract class Animals{
 abstract class Animals{
 
-    int legs;
+    private int legs;
     int stomach;
-
+//final abstract  cannot be used together
+    //final abstract void eat();
+   
+   
+    // static  abstract void eat();
+    // private abstract void eat();
     abstract void eat();
+
+    final void walk(){
+        System.out.println("lets walk!!!");
+    }
+    private static void play(){
+        System.out.println("lets play !!!");
+    }
+
+    Animals(){
+        this.legs=10;
+    }
+
+    //abstract Animals();
 }
 
 
 abstract class herbivorous extends Animals{
-   abstract void eat();
+    herbivorous(){
+        super();
+    }
+   //abstract void eat();
 }
 
 class plant extends herbivorous{
+    plant(){
+        super();
+      // this.legs=10;
+       this.stomach=90;
+    }
     void eat(){
         System.out.println("i eat sunlight and co2");
     }
@@ -35,9 +61,14 @@ public class Abstractkey {
         //Animals a=new Animals();
         //herbivorous h=new herbivorous();
         //h.eat();
-        frog f=new frog();
-        f.eat();
+        // Animals.play();
+        // frog f=new frog();
+        // f.eat();
+        // plant p=new plant();
+        // p.eat();             
+        
         plant p=new plant();
-        p.eat();               
+        // p.play();
+
     }
 }
