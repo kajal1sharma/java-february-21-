@@ -1,9 +1,10 @@
 package animal2.animal3.animal4;
 import vehicle.Vehicle;
- class Bike  extends Vehicle{
+ public class Bike  extends Vehicle{
     public int a=10;
     int getter(){
-        return this.color;
+      //  return this.color;
+      return 0;
     }
 
 }
