@@ -42,5 +42,8 @@ public class Circle {
         c2.setColor("pink");
         c3.setRadius(13);
         System.out.println("obj c1:  "+c1.toString()+"  area:  "+c1.getArea()+"  color:: "+c1.getColor());
+    
+    //Author a=new Author();
+    //Book b=new Book("name of the bool",a...);
     }
 }
