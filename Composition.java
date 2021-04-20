@@ -69,6 +69,9 @@ class Book{
         this.author.email+",gender: "+this.author.gender+"],price : "
         +this.price+", qty : "+this.qty+"]";
     }
+    // public static void main(String[] args) {
+        
+    // }
 }
 
 public class Composition {
