@@ -3,8 +3,27 @@ interface Atm{//methods =>body  abstract
     public void current();
     public void savings();
     public void deposit();
+    public void play();
 }
-abstract class atmmachine implements Atm{
+interface machine{
+    public void abc();
+    public void play();
+}
+interface machine2 extends Atm,machine{
+    public void abc();
+    public void play();
+}
+// interface machine extends Atm{
+//     public void abc();
+//     public void play();
+// }
+abstract class atmmachine implements machine,Atm{
+    public void abc(){
+
+    }
+    public void play(){
+
+    }
     public void amount(){
 
     }
