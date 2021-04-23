@@ -1,4 +1,4 @@
-interface Atm{//methods =>body
+interface Atm{//methods =>body  abstract 
     public void amount();
     public void current();
     public void savings();
