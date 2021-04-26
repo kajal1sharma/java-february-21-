@@ -1,12 +1,12 @@
 enum Level{
-    High,
-    Low
+    HIGH,
+    LOW
 }
 
 public class enumsjava {
 public static void main(String[] args) {
 
-    Level l=Level.High;
+    Level l=Level.HIGH;
     System.out.println(l);
     Attendance a=new Attendance();
     a.weekdaytoday();
@@ -14,19 +14,34 @@ public static void main(String[] args) {
 }
 
 class Attendance{
-    enum Weekday{
+    enum Weekday{//public static final;
+        //public static final Weekday Sunday=new Weekday("Sunday");
         Sunday,
         Monday,
         Tuesday,
         Wednesday,
         Thursday,
         Friday,
-        Saturday
+        Saturday;
+
+        public static void print(){
+             for(Weekday w: Weekday.values()){
+            System.out.println(w);
+        }
+        }
+        
     }
 
 
+
     public void weekdaytoday(){
-        System.out.println(Weekday.Sunday);
+        
+        Weekday.print();
+        // for(Weekday w: Weekday.values()){
+        //     System.out.println(w);
+        // }
+        // System.out.println(Weekday.Sunday);
+        // System.out.println(Weekday.Sunday.getClass());
     }
 }
 
