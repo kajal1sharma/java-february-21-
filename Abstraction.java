@@ -1,7 +1,10 @@
-interface Atm{//methods =>body  abstract 
-    public void amount();
-    public void current();
-    public void savings();
+interface Atm{//methods =>body  abstract,public 
+    
+    public static final int a=10;
+
+    public abstract void amount();
+    void current();
+    void savings();
     public void deposit();
     public void play();
 }
