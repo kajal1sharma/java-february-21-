@@ -6,9 +6,21 @@ public static void main(String[] args) {
     System.out.println("first");
     System.out.println("second");
     try{
-    int a=90/0;
-    }catch(Exception r){
+    
+    try{
+        int a=90/0;//af
+    }
+    catch(NullPointerException a){
 
+    }
+    }catch(NullPointerException a){
+        System.out.println(a);
+    }
+    catch(ArithmeticException a){
+        System.out.println(a);
+    }
+    catch(Exception e){
+        System.out.println(e);
     }
     System.out.println("third");
     System.out.println("second22");
