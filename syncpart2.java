@@ -1,4 +1,4 @@
-public class common{
+class common2{
     public synchronized void print(String s){
         for(int i=0;i<3;i++){
             System.out.println(s);
@@ -33,9 +33,9 @@ public class common{
         }
     }
 }
-class Mythread extends Thread{
+class Mythread3 extends Thread{
     //reference 
-   public  common c;
+   public  common2 c;
     public void run(){
     // common c=new common();
      
@@ -45,8 +45,8 @@ class Mythread extends Thread{
 public class syncpart2
 {
 	public static void main(String[] args) {
-		Mythread m=new Mythread();
-		common c2=new common();
+		Mythread3 m=new Mythread3();
+		common2 c2=new common2();
 		m.c=c2;
 		m.start();
 	    c2.read("hjj");
