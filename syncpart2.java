@@ -53,6 +53,3 @@ public class syncpart2
 		c2.print2("main");
 	}
 }
-class syncpart2 {
-    
-}
