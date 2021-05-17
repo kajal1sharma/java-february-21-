@@ -23,7 +23,7 @@ class common2{
     }
      public void read(String s){
         for(int i=0;i<3;i++){
-            System.out.println("non syn resource");
+            System.out.println(s);
             try{
             Thread.sleep(2000);
             }
@@ -49,7 +49,7 @@ public class syncpart2
 		common2 c2=new common2();
 		m.c=c2;
 		m.start();
-	    c2.read("hjj");
-		c2.print2("main");
+	    c2.read("main thread not synchronized");
+		c2.print2("main sync ");
 	}
 }
