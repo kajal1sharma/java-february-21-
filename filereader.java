@@ -4,13 +4,24 @@ public class filereader {
        File f=new File("task");
        FileReader f2=new FileReader(f);
 
-       FileReader f3=new FileReader("task");
+    //    FileReader f3=new FileReader("task2");
 
-            int character=f3.read();
-            while(character != -1){
-            System.out.print((char)character);
-                character=f3.read();
+    //         int character=f3.read();
+    //         while(character != -1){
+    //         System.out.print((char)character);
+    //             character=f3.read();
+    //     }
+
+
+//task file
+        char ch[]=new char[(int)f.length()];
+
+        f2.read(ch);
+
+        for(int i=0;i<ch.length;i++){
+            System.out.print(ch[i]);
         }
+
 
    } 
 }
